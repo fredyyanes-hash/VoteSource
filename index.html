@@ -421,23 +421,28 @@
 
         <div class="viz-card">
           <h3>Racial & Ethnic Breakdown</h3>
-          <div class="demographic-grid">
-            <div class="demo-item">
-              <div class="demo-circle" style="--size: 71%; --color: #667eea;">71%</div>
-              <p>White voters</p>
+          <div class="demo-bars" role="list">
+            <div class="demo-bar-row" role="listitem">
+              <span class="demo-bar-label">White</span>
+              <div class="demo-bar-track"><div class="demo-bar-fill" style="--value: 71%; --color: #667eea;"></div></div>
+              <span class="demo-bar-value">71%</span>
             </div>
-            <div class="demo-item">
-              <div class="demo-circle" style="--size: 12%; --color: #f093fb;">12%</div>
-              <p>Black voters</p>
+            <div class="demo-bar-row" role="listitem">
+              <span class="demo-bar-label">Black</span>
+              <div class="demo-bar-track"><div class="demo-bar-fill" style="--value: 12%; --color: #d16ce0;"></div></div>
+              <span class="demo-bar-value">12%</span>
             </div>
-            <div class="demo-item">
-              <div class="demo-circle" style="--size: 11%; --color: #4facfe;">11%</div>
-              <p>Hispanic voters</p>
+            <div class="demo-bar-row" role="listitem">
+              <span class="demo-bar-label">Hispanic</span>
+              <div class="demo-bar-track"><div class="demo-bar-fill" style="--value: 11%; --color: #3b9cf0;"></div></div>
+              <span class="demo-bar-value">11%</span>
             </div>
-            <div class="demo-item">
-              <div class="demo-circle" style="--size: 6%; --color: #ffd93d;">6%</div>
-              <p>Other groups</p>
+            <div class="demo-bar-row" role="listitem">
+              <span class="demo-bar-label">Other groups</span>
+              <div class="demo-bar-track"><div class="demo-bar-fill" style="--value: 6%; --color: #e0a800;"></div></div>
+              <span class="demo-bar-value">6%</span>
             </div>
+            <p class="demo-bar-note">Share of voters in the 2024 electorate</p>
           </div>
           <p class="viz-insight">America's electorate is becoming more diverse each election cycle, reflecting changing demographics.</p>
         </div>
@@ -722,7 +727,7 @@
         <a href="#data">The Data</a>
         <a href="#register">Register</a>
       </div>
-      <p class="footer-copyright">&copy; 2025 VoteSource. Non-partisan voter education resource. Data sources: U.S. Census Bureau, Federal Election Commission, Pew Research Center.</p>
+      <p class="footer-copyright">&copy; <span id="footer-year">2026</span> VoteSource. Non-partisan voter education resource. Data sources: U.S. Census Bureau, Federal Election Commission, Pew Research Center.</p>
     </div>
   </footer>
 
