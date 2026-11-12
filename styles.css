@@ -2323,3 +2323,207 @@ ul {
   }
 
 }
+/* ========================================== */
+/* DESIGN REFRESH (2026-11): form, charts,    */
+/* phone layout, section rhythm               */
+/* ========================================== */
+
+/* --- Section rhythm: alternate backgrounds --- */
+.section-elections { background: var(--white); }
+.section-data { background: #f5f6fd; }
+
+/* --- One consistent heading scale --- */
+.section-title,
+.key-facts h3 {
+  font-size: clamp(1.875rem, 4.5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+/* --- Registration form on a readable white card --- */
+.voter-form {
+  background: var(--white);
+  backdrop-filter: none;
+  border: none;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.25);
+  color: var(--gray-800);
+}
+
+.voter-form .form-section-title {
+  color: var(--primary);
+  border-bottom-color: var(--gray-200);
+}
+
+.voter-form .form-field label {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--gray-700);
+}
+
+.voter-form .form-field input,
+.voter-form .form-field select {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-300);
+  color: var(--gray-900);
+}
+
+.voter-form .form-field input::placeholder { color: var(--gray-400); }
+
+.voter-form .form-field input:focus,
+.voter-form .form-field select:focus {
+  background: var(--white);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.2);
+  outline: none;
+}
+
+.voter-form .field-hint { color: var(--gray-500); }
+
+.voter-form .radio-grid,
+.voter-form .checkbox-grid {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+}
+
+.voter-form .radio-option,
+.voter-form .checkbox-option {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  padding: 0.75rem 1rem;
+}
+
+.voter-form .radio-option:hover,
+.voter-form .checkbox-option:hover {
+  background: #f5f6fd;
+  border-color: var(--accent-light);
+}
+
+.voter-form .radio-option:has(input:checked),
+.voter-form .checkbox-option:has(input:checked) {
+  background: #eef0fd;
+  border-color: var(--accent);
+}
+
+.voter-form input[type="radio"],
+.voter-form input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 1.1rem;
+  height: 1.1rem;
+  flex-shrink: 0;
+}
+
+.voter-form .radio-label,
+.voter-form .checkbox-label {
+  color: var(--gray-800);
+  white-space: nowrap;
+}
+
+.voter-form .radio-label i,
+.voter-form .checkbox-label i { color: var(--accent); }
+
+.voter-form .other-input { color: var(--gray-900); }
+.voter-form .other-input::placeholder { color: var(--gray-400); }
+
+.voter-form .form-submit {
+  background: var(--accent-gradient);
+  color: var(--white);
+}
+
+.voter-form .form-submit:hover { color: var(--white); filter: brightness(1.08); }
+
+.voter-form .form-disclaimer { color: var(--gray-500); }
+
+/* --- Racial & ethnic breakdown as proportional bars --- */
+.demo-bars {
+  display: grid;
+  gap: 1.1rem;
+  margin-bottom: var(--spacing-md);
+}
+
+.demo-bar-row {
+  display: grid;
+  grid-template-columns: 7.5rem 1fr 3rem;
+  align-items: center;
+  gap: var(--spacing-sm);
+}
+
+.demo-bar-label {
+  font-weight: 500;
+  color: var(--gray-700);
+  font-size: 0.9375rem;
+}
+
+.demo-bar-track {
+  height: 1.25rem;
+  background: var(--gray-100);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.demo-bar-fill {
+  width: var(--value);
+  height: 100%;
+  background: var(--color);
+  border-radius: var(--radius-full);
+  min-width: 0.5rem;
+}
+
+.demo-bar-value {
+  font-family: var(--font-primary);
+  font-weight: 700;
+  color: var(--primary);
+  text-align: right;
+}
+
+.demo-bar-note {
+  font-size: 0.8125rem;
+  color: var(--gray-500);
+  margin-top: 0.25rem;
+}
+
+/* --- Election cards: collapsed text fades out instead of cutting off --- */
+.card-wrap .card-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1.6em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), var(--white));
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.card-wrap .card-text.expanded::after { opacity: 0; }
+
+/* --- Phone layout --- */
+@media screen and (max-width: 480px) {
+  .hero-stats-row {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .stat-bubble {
+    flex: 1 1 0;
+    min-width: 0;
+    width: auto;
+    max-width: none;
+    padding: 0.75rem 0.25rem;
+  }
+
+  .stat-number { font-size: 1.75rem; }
+  .stat-unit { font-size: 0.8rem; }
+  .stat-label { font-size: 0.65rem; text-align: center; }
+
+  .voter-form { padding: var(--spacing-md); }
+
+  .voter-form .radio-grid,
+  .voter-form .checkbox-grid { grid-template-columns: 1fr 1fr; }
+
+  .voter-form .radio-label,
+  .voter-form .checkbox-label { white-space: normal; font-size: 0.875rem; }
+
+  .demo-bar-row { grid-template-columns: 5.5rem 1fr 2.5rem; }
+}

@@ -352,3 +352,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
 });
+// Keep the footer year current
+(function () {
+  var yearEl = document.getElementById('footer-year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
