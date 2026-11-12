@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="VoteSource: Empowering voters with unbiased facts and easy registration">
+  <title>VoteSource - Every Voice Counts</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+<!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="https://i.pinimg.com/736x/6e/3b/6e/6e3b6e14a2d9914b682f0b4c1603bd6a.jpg" alt="VoteSource Logo" class="nav-logo">
+        <span class="brand-text">Source</span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#impact" class="nav-link">Your Impact</a></li>
+        <li><a href="#elections" class="nav-link">Elections</a></li>
+        <li><a href="#data" class="nav-link">The Data</a></li>
+        <li><a href="#register" class="nav-link nav-cta">Register Now</a></li>
+      </ul>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Section 1: Hero/Intro -->
+  <section id="home" class="hero parallax-section">
+    <div class="hero-gradient"></div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-title">
+          <span class="title-line">Your Vote.</span>
+          <span class="title-line gradient-text">Your Power.</span>
+          <span class="title-line">Your Future.</span>
+        </h1>
+        <p class="hero-description">In 2024, 66% of eligible Americans voted. That means 80 million voices weren't heard. Will yours be one of them?</p>
+        <div class="hero-stats-row">
+          <div class="stat-bubble">
+            <span class="stat-number" data-target="161">161</span>
+            <span class="stat-unit">Million</span>
+            <span class="stat-label">Registered Voters</span>
+          </div>
+          <div class="stat-bubble">
+            <span class="stat-number" data-target="66">66</span>
+            <span class="stat-unit">Percent</span>
+            <span class="stat-label">Turnout 2024</span>
+          </div>
+          <div class="stat-bubble">
+            <span class="stat-number" data-target="80">80</span>
+            <span class="stat-unit">Million</span>
+            <span class="stat-label">Didn't Vote</span>
+          </div>
+        </div>
+        <a href="#register" class="hero-button">
+          <span>Start Your Journey</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-card card-1">
+          <img src="https://i.pinimg.com/736x/08/ec/fa/08ecfa2d0a6496b080f9cf7aeec274a5.jpg" alt="Statue of Liberty with US Flag">
+        </div>
+        <div class="visual-card card-2">
+          <div class="card-content">
+            <p class="card-stat">5 min</p>
+            <p class="card-text">Average registration time</p>
+          </div>
+        </div>
+        <div class="visual-card card-3">
+          <div class="card-content">
+            <p class="card-stat">1 vote</p>
+            <p class="card-text">Can change everything</p>
+          </div>
+        </div>
+      </div>
+    </div>  
+    <!-- Quick Facts Scroll Section -->
+<div class="quick-facts">
+  <h3 class="facts-title">Registering to vote takes less time than...</h3>
+  <div class="facts-grid">
+    <!-- Coffee Card -->
+    <div class="fact-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-coffee"></i>
+          <p>Brewing your morning coffee</p>
+          <span class="fact-time">~7 min</span>
+        </div>
+        <div class="flip-card-back">
+          <img src="https://i.pinimg.com/736x/85/49/84/8549840d77f2e52f211bd765bbd2fbb4.jpg" alt="Coffee" loading="lazy">
+          <div class="flip-content">
+            <h4>Coffee Time</h4>
+            <p>Perfect morning ritual takes 7 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Card -->
+    <div class="fact-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-mobile-alt"></i>
+          <p>Scrolling through social media</p>
+          <span class="fact-time">~8 min</span>
+        </div>
+        <div class="flip-card-back">
+          <img src="https://i.pinimg.com/736x/cc/3b/9e/cc3b9e8c89ae47f5c05bdc05a071a992.jpg" alt="Social Media" loading="lazy">
+          <div class="flip-content">
+            <h4>Social Scroll</h4>
+            <p>Average social media session is 8 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Shopping Card -->
+    <div class="fact-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-shopping-cart"></i>
+          <p>Waiting in checkout line</p>
+          <span class="fact-time">~10 min</span>
+        </div>
+        <div class="flip-card-back">
+          <img src="https://i.pinimg.com/736x/a4/7d/da/a47dda58cab15d3cd68edb397d465bd9.jpg" alt="Shopping" loading="lazy">
+          <div class="flip-content">
+            <h4>Checkout Wait</h4>
+            <p>Typical store line wait is 10 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Music Card -->
+    <div class="fact-card flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <i class="fas fa-music"></i>
+          <p>Listening to Bohemian Rhapsody</p>
+          <span class="fact-time">~6 min</span>
+        </div>
+        <div class="flip-card-back">
+          <img src="https://i.pinimg.com/736x/76/23/06/7623065beeda6010d9c11f68bdf0c3c1.jpg" alt="Music" loading="lazy">
+          <div class="flip-content">
+            <h4>Epic Anthem</h4>
+            <p>Queen's masterpiece runs 6 minutes</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  </section>
+
+  <!-- Section 2: Your Impact / Why Vote -->
+  <section id="impact" class="section-impact parallax-section">
+    <div class="section-container">
+      <div class="section-header">
+        <span class="section-tag">The Power of Participation</span>
+        <h2 class="section-title">Why Every Single Vote Matters</h2>
+        <p class="section-subtitle">History is filled with elections decided by razor-thin margins. Your vote isn't just symbolic—it's decisive.</p>
+      </div>
+
+      <div class="impact-showcase">
+        <img src="https://i.pinimg.com/1200x/1a/9d/11/1a9d1178643002aed5e3c6edb11c28b8.jpg" alt="Ready Set Vote" class="showcase-image parallax-img" loading="lazy">
+        
+        <div class="impact-cards">
+          <div class="impact-card featured">
+            <div class="card-icon">
+              <i class="fas fa-balance-scale"></i>
+            </div>
+            <h3>537 Votes</h3>
+            <p>The 2000 presidential election was decided by just 537 votes in Florida—determining the nation's leader and shaping policy for years.</p>
+            <div class="card-highlight">Florida 2000</div>
+          </div>
+
+          <div class="impact-card">
+            <div class="card-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3>Local Power</h3>
+            <p>Municipal elections often see margins of 10-100 votes. Your city council, mayor, and school board directly impact your daily life.</p>
+          </div>
+
+          <div class="impact-card">
+            <div class="card-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3>Policy Impact</h3>
+            <p>Elected officials decide healthcare access, education funding, infrastructure investment, and economic policies that affect your wallet.</p>
+          </div>
+
+          <div class="impact-card">
+            <div class="card-icon">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <h3>Future Generations</h3>
+            <p>Climate policy, education reform, and economic decisions made today will shape opportunities for the next generation.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="turnout-comparison">
+        <h3>Age & Turnout: The Participation Gap</h3>
+        <div class="comparison-grid">
+          <div class="age-group">
+            <div class="age-label">18-29 years</div>
+            <div class="turnout-bar" data-percentage="50">
+              <div class="bar-fill youth"></div>
+              <span class="bar-label">50%</span>
+            </div>
+            <p class="age-impact">Young voters have the most at stake but the lowest turnout</p>
+          </div>
+          <div class="age-group">
+            <div class="age-label">30-44 years</div>
+            <div class="turnout-bar" data-percentage="62">
+              <div class="bar-fill adult"></div>
+              <span class="bar-label">62%</span>
+            </div>
+            <p class="age-impact">Career-focused voters balancing work and civic duty</p>
+          </div>
+          <div class="age-group">
+            <div class="age-label">45-64 years</div>
+            <div class="turnout-bar" data-percentage="69">
+              <div class="bar-fill mature"></div>
+              <span class="bar-label">69%</span>
+            </div>
+            <p class="age-impact">Established voters with higher participation rates</p>
+          </div>
+          <div class="age-group">
+            <div class="age-label">65+ years</div>
+            <div class="turnout-bar" data-percentage="72">
+              <div class="bar-fill senior"></div>
+              <span class="bar-label">72%</span>
+            </div>
+            <p class="age-impact">Highest turnout—experienced voters who show up</p>
+          </div>
+        </div>
+        <div class="comparison-insight">
+          <i class="fas fa-lightbulb"></i>
+          <p>If young voters matched senior turnout, elections would look dramatically different across the country.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- Section 3: Elections Guide -->
+<section id="elections" class="section-elections parallax-section">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag">Understanding Your Ballot</span>
+      <h2 class="section-title">Every Election, Every Level</h2>
+      <p class="section-subtitle">From the President to your local school board—each elected official affects your life in different ways.</p>
+    </div>
+
+    <img src="https://i.pinimg.com/736x/28/ec/b4/28ecb4fe0930c2065b4f5d4132cce9f5.jpg" alt="Vote In Your Hands" class="section-featured-image parallax-img" loading="lazy">
+
+    <div class="elections-cards-container">
+      <!-- Presidential Election -->
+      <div class="card-wrap">
+        <div class="card-header one">
+          <i class="fas fa-flag-usa"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">Federal</div>
+          <h3 class="card-title">Presidential Election</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 4 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">The President shapes foreign policy, signs legislation, appoints Supreme Court justices, and sets the national agenda. Their decisions affect everything from economic policy to international relations.</p>
+            <div class="election-stat">270 of 538 electoral votes needed to win</div>
+          </div>
+          <button class="card-btn one read-more-btn">Read More</button>
+        </div>
+      </div>
+
+      <!-- Senate Race -->
+      <div class="card-wrap">
+        <div class="card-header two">
+          <i class="fas fa-university"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">Federal</div>
+          <h3 class="card-title">Senate Race</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 2-6 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">Senators confirm presidential appointments, ratify treaties, and craft federal legislation. With 6-year terms, they have significant influence over long-term policy direction.</p>
+            <div class="election-stat">100 seats • ⅓ elected every 2 years</div>
+          </div>
+          <button class="card-btn two read-more-btn">Read More</button>
+        </div>
+      </div>
+
+      <!-- Governor's Race -->
+      <div class="card-wrap">
+        <div class="card-header three">
+          <i class="fas fa-landmark"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">State</div>
+          <h3 class="card-title">Governor's Race</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 4 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">Governors control state budgets, education systems, healthcare programs, and infrastructure. They can veto legislation and deploy the National Guard during emergencies.</p>
+            <div class="election-stat">$50B+ average state budget</div>
+          </div>
+          <button class="card-btn three read-more-btn">Read More</button>
+        </div>
+      </div>
+
+      <!-- Mayoral Race -->
+      <div class="card-wrap">
+        <div class="card-header four">
+          <i class="fas fa-city"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">Local</div>
+          <h3 class="card-title">Mayoral Race</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 2-4 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">Mayors manage police departments, public transit, zoning laws, and local development. They're your first line of contact for neighborhood issues and city services.</p>
+            <div class="election-stat">Often decided by &lt;10,000 votes</div>
+          </div>
+          <button class="card-btn four read-more-btn">Read More</button>
+        </div>
+      </div>
+
+      <!-- City Council -->
+      <div class="card-wrap">
+        <div class="card-header one">
+          <i class="fas fa-users"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">Local</div>
+          <h3 class="card-title">City Council</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 2-4 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">Council members pass local ordinances affecting businesses, housing, parks, and community development. They control your city's budget and local tax rates.</p>
+            <div class="election-stat">Sometimes decided by 50-200 votes</div>
+          </div>
+          <button class="card-btn one read-more-btn">Read More</button>
+        </div>
+      </div>
+
+      <!-- Sheriff -->
+      <div class="card-wrap">
+        <div class="card-header two">
+          <i class="fas fa-shield-alt"></i>
+        </div>
+        <div class="card-content">
+          <div class="election-badge">Local</div>
+          <h3 class="card-title">Sheriff</h3>
+          <div class="election-meta">
+            <span><i class="fas fa-calendar"></i> Every 4 years</span>
+          </div>
+          <div class="card-text-container">
+            <p class="card-text">Sheriffs run county jails, patrol unincorporated areas, and set law enforcement priorities. They have significant discretion in how laws are enforced in your community.</p>
+            <div class="election-stat">3,000+ counties nationwide</div>
+          </div>
+          <button class="card-btn two read-more-btn">Read More</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+ <!-- Section 4: Demographics & Data - Updated Gender Section -->
+<section id="data" class="section-data">
+  <div class="section-container">
+    <div class="section-header">
+      <span class="section-tag">The Numbers Tell a Story</span>
+      <h2 class="section-title">Who Votes in America?</h2>
+      <p class="section-subtitle">Understanding voter demographics helps identify representation gaps and participation trends.</p>
+    </div>
+
+    <div class="data-visualization">
+      <div class="viz-card">
+        <h3>Gender Representation</h3>
+        <div class="gender-stats">
+          <div class="gender-bar">
+            <div class="bar-section women" style="width: 53%">
+              <span>Women: 53%</span>
+            </div>
+            <div class="bar-section men" style="width: 47%">
+              <span>Men: 47%</span>
+            </div>
+          </div>
+          <!-- Image added below the gender bar -->
+          <div class="gender-image-below">
+            <img src="https://i.pinimg.com/736x/2b/a0/34/2ba0347e7a7ea0b43011d0f93f393909.jpg" 
+                 alt="Visual representation of gender balance in voting - diverse group of people voting together" 
+                 loading="lazy">
+            <div class="gender-image-caption">
+              <i class="fas fa-users"></i>
+              <p>Voting participation across genders reflects evolving social dynamics</p>
+            </div>
+          </div>
+        </div>
+        <p class="viz-insight">Women have voted at higher rates than men in every presidential election since 1980.</p>
+      </div>
+
+        <div class="viz-card">
+          <h3>Racial & Ethnic Breakdown</h3>
+          <div class="demographic-grid">
+            <div class="demo-item">
+              <div class="demo-circle" style="--size: 71%; --color: #667eea;">71%</div>
+              <p>White voters</p>
+            </div>
+            <div class="demo-item">
+              <div class="demo-circle" style="--size: 12%; --color: #f093fb;">12%</div>
+              <p>Black voters</p>
+            </div>
+            <div class="demo-item">
+              <div class="demo-circle" style="--size: 11%; --color: #4facfe;">11%</div>
+              <p>Hispanic voters</p>
+            </div>
+            <div class="demo-item">
+              <div class="demo-circle" style="--size: 6%; --color: #ffd93d;">6%</div>
+              <p>Other groups</p>
+            </div>
+          </div>
+          <p class="viz-insight">America's electorate is becoming more diverse each election cycle, reflecting changing demographics.</p>
+        </div>
+
+        <div class="viz-card wide">
+          <h3>Education & Participation</h3>
+          <div class="education-chart">
+            <div class="edu-bar">
+              <span class="edu-label">High School or Less</span>
+              <div class="edu-progress" style="--width: 55%; --color: #ef4444;">55%</div>
+            </div>
+            <div class="edu-bar">
+              <span class="edu-label">Some College</span>
+              <div class="edu-progress" style="--width: 65%; --color: #f59e0b;">65%</div>
+            </div>
+            <div class="edu-bar">
+              <span class="edu-label">Bachelor's Degree</span>
+              <div class="edu-progress" style="--width: 77%; --color: #10b981;">77%</div>
+            </div>
+            <div class="edu-bar">
+              <span class="edu-label">Advanced Degree</span>
+              <div class="edu-progress" style="--width: 83%; --color: #3b82f6;">83%</div>
+            </div>
+          </div>
+          <p class="viz-insight">Higher education correlates with higher voter turnout, but every voice matters regardless of educational background.</p>
+        </div>
+      </div>
+
+      <div class="key-facts">
+        <h3>Election Facts You Should Know</h3>
+        <div class="facts-row">
+          <div class="fact-item">
+            <div class="fact-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h4>Voter Fraud is Rare</h4>
+            <p>Extensive research shows fraud rates between 0.0003% and 0.0025%—statistically negligible.</p>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">
+              <i class="fas fa-globe-americas"></i>
+            </div>
+            <h4>Global Comparison</h4>
+            <p>The U.S. ranks around 30th in voter turnout among developed democracies—there's room for improvement.</p>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <h4>Voting Methods</h4>
+            <p>In-person: 60% | Mail-in: 31% | Early voting: 9%—choose what works for you.</p>
+          </div>
+          <div class="fact-item">
+            <div class="fact-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <h4>Registration Deadlines</h4>
+            <p>Most states require registration 15-30 days before Election Day. Check your state's specific deadline.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 5: Registration Form -->
+  <section id="register" class="section-register">
+    <div class="register-overlay"></div>
+    <div class="section-container">
+      <div class="register-content">
+        <div class="register-intro">
+          <span class="section-tag light">Take Action Now</span>
+          <h2 class="section-title light">Get Your Voter Information Packet</h2>
+          <p class="register-description">Fill out this form to receive personalized voting information, registration deadlines, polling locations, and ballot previews for your area.</p>
+          
+          <div class="register-benefits">
+            <div class="benefit-item">
+              <i class="fas fa-paper-plane"></i>
+              <span>Instant email confirmation</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Polling place locator</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-calendar-check"></i>
+              <span>Important date reminders</span>
+            </div>
+            <div class="benefit-item">
+              <i class="fas fa-file-alt"></i>
+              <span>Sample ballot preview</span>
+            </div>
+          </div>
+        </div>
+
+        <form id="registration-form" class="voter-form">
+          <div class="form-section">
+            <h3 class="form-section-title">Personal Information</h3>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" required>
+              </div>
+              <div class="form-field">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" required>
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" required>
+              <span class="field-hint">We'll send your voter information packet here</span>
+            </div>
+
+            <div class="form-field">
+              <label for="dob">Date of Birth *</label>
+              <input type="date" id="dob" name="dob" required>
+              <span class="field-hint">You must be 18 or older to register</span>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="form-section-title">Address</h3>
+            <div class="form-field">
+              <label for="address1">Address Line 1 *</label>
+              <input type="text" id="address1" name="address1" placeholder="Street address, P.O. box" required>
+            </div>
+            <div class="form-field">
+              <label for="address2">Address Line 2</label>
+              <input type="text" id="address2" name="address2" placeholder="Apartment, suite, unit, building, floor, etc.">
+            </div>
+            <div class="form-row triple">
+              <div class="form-field">
+                <label for="city">City *</label>
+                <input type="text" id="city" name="city" required>
+              </div>
+              <div class="form-field">
+                <label for="state">State *</label>
+                <select id="state" name="state" required>
+                  <option value="">Select State</option>
+                </select>
+              </div>
+              <div class="form-field">
+                <label for="zip">Zip Code *</label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" maxlength="5" required>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="form-section-title">Political Affiliation</h3>
+            <div class="form-field">
+              <div class="radio-grid">
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Republican">
+                  <span class="radio-label">Republican</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Democrat">
+                  <span class="radio-label">Democrat</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Independent">
+                  <span class="radio-label">Independent</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Green Party">
+                  <span class="radio-label">Green Party</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Libertarian">
+                  <span class="radio-label">Libertarian</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Other">
+                  <span class="radio-label">Other</span>
+                </label>
+                <label class="radio-option">
+                  <input type="radio" name="party" value="Undeclared" checked>
+                  <span class="radio-label">Prefer not to answer</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-section">
+            <h3 class="form-section-title">Elections of Interest</h3>
+            <div class="form-field">
+              <label>Which elections do you want information about? (Check all that apply)</label>
+              <div class="checkbox-grid">
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Presidential race">
+                  <span class="checkbox-label">
+                    <i class="fas fa-flag-usa"></i>
+                    Presidential Race
+                  </span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Governors race">
+                  <span class="checkbox-label">
+                    <i class="fas fa-landmark"></i>
+                    Governor's Race
+                  </span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Senate race">
+                  <span class="checkbox-label">
+                    <i class="fas fa-university"></i>
+                    Senate Race
+                  </span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Mayoral race">
+                  <span class="checkbox-label">
+                    <i class="fas fa-city"></i>
+                    Mayoral Race
+                  </span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="City Council">
+                  <span class="checkbox-label">
+                    <i class="fas fa-users"></i>
+                    City Council
+                  </span>
+                </label>
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Local Sheriff">
+                  <span class="checkbox-label">
+                    <i class="fas fa-shield-alt"></i>
+                    Local Sheriff
+                  </span>
+                </label>
+              </div>
+              
+              <div class="other-interest">
+                <label class="checkbox-option">
+                  <input type="checkbox" name="interests[]" value="Other" id="other-checkbox">
+                  <span class="checkbox-label">
+                    <i class="fas fa-ellipsis-h"></i>
+                    Other
+                  </span>
+                </label>
+                <input type="text" name="other-interest" id="other-interest-text" placeholder="Please specify..." class="other-input" disabled>
+              </div>
+            </div>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <span>Send Me Voter Information</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+          <p class="form-disclaimer">By submitting this form, you'll receive non-partisan voter information. We never share your data or send political campaign materials.</p>
+        </form>
+
+        <div id="success-modal" class="success-modal">
+          <div class="modal-content">
+            <div class="success-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>You're All Set!</h3>
+            <p>Check your email for your personalized voter information packet. Make sure to check your spam folder too!</p>
+            <button class="modal-close" id="modal-close">Got It!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <img src="https://i.pinimg.com/736x/6e/3b/6e/6e3b6e14a2d9914b682f0b4c1603bd6a.jpg" alt="VoteSource" loading="lazy">
+        <span>VoteSource</span>
+      </div>
+      <p class="footer-tagline">Empowering informed voters with unbiased, factual information.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#impact">Your Impact</a>
+        <a href="#elections">Elections</a>
+        <a href="#data">The Data</a>
+        <a href="#register">Register</a>
+      </div>
+      <p class="footer-copyright">&copy; 2025 VoteSource. Non-partisan voter education resource. Data sources: U.S. Census Bureau, Federal Election Commission, Pew Research Center.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
